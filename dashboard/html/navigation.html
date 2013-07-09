@@ -1,0 +1,66 @@
+<template name="topnav">
+  <div class="container">
+    <div class="page-header">
+      <h1>513 FREE</h1>
+      <div id="login-bar">
+        {{loginButtons  align="right"}}
+      </div>
+      <div class="container">
+         
+        <div class="row-fluid">
+          <div class="span12">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="/">Home</a> 
+              </li>
+              <!-- drop down-->
+              <li class="dropdown" id="accountmenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/events">Events<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/events">List all</a> 
+                  </li>
+                  <li>
+                    <a href="/events/add">Add new</a> 
+                  </li>
+                </ul>
+              </li>
+              <!-- drop down-->
+              <li class="dropdown" id="accountmenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/contacts">Contacts<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/contacts">List all</a> 
+                  </li>
+                  <li>
+                    <a href="/contacts/add">Add new</a> 
+                  </li>
+                </ul>
+              </li>
+              <!-- drop down-->
+              <li class="dropdown" id="accountmenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/tasks">Tasks<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/tasks">List all</a> 
+                  </li>
+                  <li>
+                    <a href="/tasks/add">Add new</a> 
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+</template>
+
+<template name="rightnav">
+  <div class="span4">
+    {{>upcoming_events}}
+    {{>tasks_coming_due}}
+  </div>
+</template>
+

@@ -1,0 +1,252 @@
+<template name="upcoming_events">
+  <table class="table table-striped table-condensed table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Upcoming events</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="/events/1">Board Meeting</a> 
+        </td>
+        <td>
+          <a href="/events/1">6/24/2013 8pm</a> 
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/events/1">Nate's Birthday</a> 
+        </td>
+        <td>
+          <a href="/events/1">7/1/2013</a> 
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</template>
+
+<template name="events_page">
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="span6">
+          <table class="table table-striped table-condensed table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>Events</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>
+                    <a href="/events/add">Stanley Prison</a> 
+                  </td>
+                  <td>
+                    11/12/2013
+                  </td>
+                  <td>
+                    <a href="/events/add">edit</a> 
+                  </td>
+                  <td>
+             <a href="/events/add">delete</a> 
+          </td>                
+        </tr>
+
+         <tr>
+                  <td>
+                    <a href="/events/add">Nate's Birthday</a> 
+                  </td>
+                  <td>
+                    7/1/2013
+                  </td>
+                  <td>
+                    <a href="/events/add">edit</a> 
+                  </td>
+                  <td>
+             <a href="/events/add">delete</a> 
+          </td>                
+        </tr>
+        
+         <tr>
+                  <td>
+                    <a href="/events/add">Board Meeting</a> 
+                  </td>
+                  <td>
+                    8/5/2013
+                  </td>
+                  <td>
+                    <a href="/events/add">edit</a> 
+                  </td>
+                  <td>
+             <a href="/events/add">delete</a> 
+          </td>                
+        </tr>
+
+        
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="new_event">
+  <div class="container">
+    <form class="form-horizontal">
+      <fieldset>
+
+        <!-- Form Name -->
+        <legend>Event</legend>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label">Event Name</label>
+          <div class="controls">
+            <input id="eventName" name="eventName" type="text" placeholder="event name" class="input-xlarge">
+            
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label">Date</label>
+          <div class="controls">
+            <input id="date" name="date" type="text" placeholder="mm/dd/yyyy" class="input-xlarge">
+            
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label">Address</label>
+          <div class="controls">
+            <input id="stAddress" name="stAddress" type="text" placeholder="address" class="input-xlarge">
+            
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label">City</label>
+          <div class="controls">
+            <input id="city" name="city" type="text" placeholder="city" class="input-xlarge">
+            
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="control-group">
+          <label class="control-label">State</label>
+          <div class="controls">
+            <select id="state" name="state" class="input-xlarge">
+              <option>...</option>
+              <option>Iowa</option>
+              <option>Minnesota</option>
+              <option>Wisconsin</option>
+              <option>etc</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Button Drop Down -->
+        <div class="control-group">
+          <label class="control-label">Venue</label>
+          <div class="controls">
+            <div class="input-append">
+              <input id="venue" name="venue" class="span2" placeholder="venue name" type="text">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                  Venues
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">....</a></li>
+                  <li><a href="#">Stanley Prison</a></li>
+                  <li><a href="#">Action City</a></li>
+                  <li><a href="#">Peace Church</a></li>
+                  <li><a href="#">CREATE NEW</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label">Contact Name</label>
+          <div class="controls">
+            <input id="contact1Name" name="contact1Name" type="text" placeholder="contact name" class="input-xlarge">
+            
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label">Email Address</label>
+          <div class="controls">
+            <input id="email" name="email" type="text" placeholder="you@yourmail.com" class="input-xlarge">
+            
+          </div>
+        </div>
+
+        <!-- Button Drop Down -->
+        <div class="control-group">
+          <label class="control-label">Contact Phone 1</label>
+          <div class="controls">
+            <div class="input-append">
+              <input id="contactPhone" name="contactPhone" class="span2" placeholder="111-222-3333" type="text">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                  Type
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Cell</a></li>
+                  <li><a href="#">Other</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Button Drop Down -->
+        <div class="control-group">
+          <label class="control-label">Contact Phone 2</label>
+          <div class="controls">
+            <div class="input-append">
+              <input id="contactPhone" name="contactPhone2" class="span2" placeholder="111-222-3333" type="text">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                  Type
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Cell</a></li>
+                  <li><a href="#">Other</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <A HREF="#" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add another contact</A>
+        <BR><BR><BR>
+        <!-- Button (Double) -->
+        <div class="control-group">
+          <label class="control-label">Save</label>
+          <div class="controls">
+            <button id="bSave" name="bSave" class="btn btn-success">Save</button>
+            <button id="bCancel" name="bCancel" class="btn btn-danger">Cancel</button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+</template>
