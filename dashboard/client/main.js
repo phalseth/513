@@ -9,7 +9,8 @@ Meteor.Router.add({
   '/contacts': 'contacts_page',
   '/contacts/add': 'add_contact',
   '/contacts/save': function(){
-  	console.log("this.params",this.params);
+    Dashboard['pete'] = Dashboard['pete'] + 1;
+  	console.log("pete",Dashboard['pete']);
   	return 'contacts_page';
   },
   '/tasks': 'tasks_page',
@@ -33,4 +34,4 @@ Meteor.Router.filters({
   }
 });
 
-Meteor.Router.filter('checkLoggedIn', {except: 'home_page'});
+//Meteor.Router.filter('checkLoggedIn', {except: 'home_page',});

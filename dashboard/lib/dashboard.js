@@ -1,1 +1,1 @@
-var Dashboard = {};
+Dashboard = (typeof Dashboard != 'undefined') ? Dashboard : {};
